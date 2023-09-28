@@ -26,11 +26,11 @@ body {
 }
 
 header {
-    font-size: 7vmin;
+    font-size: 8vmin;
     color: darkgrey;
     letter-spacing: 1vmin;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 #word {
@@ -50,19 +50,21 @@ header {
     gap: 2vmin;
 } 
 
-#score-display {
-    justify-self: center;
-    height: 4vmin;
-    width: 17vmin;
-    margin-top: -5vmin;
-    background-color: darkgrey;
-    color: greenyellow;
-    border: .3vmin solid greenyellow;
-    border-radius: 3vmin;
-    font-size: 2vmin;
+/* #score-display {
+    font-family: 'Roboto Mono', monospace;
+    height: 3vmin;
+    width: 2vmin;
+    background-color: black;
+    color: black;
+    border: 4vmin solid greenyellow;
+    border-radius: 50;
+    font-size: 1.8vmin;
     outline: none;
-    
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: center;
+} */
 
 main {
     display: flex;
@@ -79,7 +81,7 @@ main {
     text-align: center;
 }
 
-#start-game {
+#start-button {
     justify-self: center;
     height: 4vmin;
     width: 17vmin;
