@@ -1,4 +1,4 @@
- /*----- constants -----*/
+// *----- constants -----*/
 const CARDS = [
 {img: 'img_path', value: 'Yoda', matched : false},
 {img: 'img_path', value: 'Yoda', matched : false},
@@ -6,13 +6,14 @@ const CARDS = [
 {img: 'img_path', value: 'Luke', matched : false},
 {img: 'img_path', value: 'Darth', matched : false},
 {img: 'img_path', value: 'Darth', matched : false},
-{img: 'img_path', value: 'Obi-Wan', matched : false},
-{img: 'img_path', value: 'Obi-Wan', matched : false},
-{img: 'img_path', value: 'Palpatine', matched : false},
-{img: 'img_path', value: 'Palpatine', matched : false},
-{img: 'img_path', value: 'R2D2', matched : false},
-{img: 'img_path', value: 'R2D2', matched : false},
 ]
+// {img: 'img_path', value: 'Obi-Wan', matched : false},
+// {img: 'img_path', value: 'Obi-Wan', matched : false},
+// {img: 'img_path', value: 'Palpatine', matched : false},
+// {img: 'img_path', value: 'Palpatine', matched : false},
+// {img: 'img_path', value: 'R2D2', matched : false},
+// {img: 'img_path', value: 'R2D2', matched : false},
+
 // const CARDS = ['a', 'a'];
 const WINNING_SCORE = CARDS.length / 2;
 const INITAL_SCORE = 0;
@@ -28,6 +29,7 @@ const startButtonEl = document.getElementById('start-button');
 // grab the score display element by id and save it to a variable named scoreDisplayEl
 const gameBoardEl = document.getElementById('game-board');
 const scoreDisplayEl = document.getElementById('score-display');
+const messageEl = document.getElementById('message');
 
 	/*----- event listeners -----*/
 startButtonEl.addEventListener('click', init);
@@ -90,9 +92,8 @@ function handleCardClick() {
     
     // Call the 'render()' function to update the game display
     render();
-    
-    // Reset the 'cardsMatched' array
     cardsMatched = [];
+    checkWin();
   }
 }
 
@@ -102,8 +103,11 @@ function render() {
 };
 
 //function that checks for wins
-//define winning condition 
 //if user has won, else lost
-
+function checkWin() {
+    if(score === WINNING_SCORE) {
+        messageEl.innerText = "Congrats! You won!";
+    }
+}
 
 //repay button? 
