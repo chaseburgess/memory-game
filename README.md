@@ -13,11 +13,11 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
 
-  ![Start of Game](<Screenshot 2023-09-28 200550.png>)
+  |start of game|![Start of Game](<Screenshot 2023-09-28 200550.png>)
 
- ![Alt text](<Screenshot 2023-09-28 200718.png>)
+ |Couple of moves|![Alt text](<Screenshot 2023-09-28 200718.png>)
 
-  ![Winner](<Screenshot 2023-09-28 200855.png>)
+  |Winner|![Winner](<Screenshot 2023-09-28 200855.png>)
 
 ## technologies used
 
