@@ -1,6 +1,6 @@
 # may-the-match-be-with-you
 
-![]https://sm.ign.com/t/ign_ap/feature/s/star-wars-/star-wars-school-the-history-of-the-lightsaber_sacd.1280.jpg
+![Main](<Screenshot 2023-09-28 203409.png>)
 
 [click to play](https://github.com/chaseburgess/memory-game)
 
@@ -13,11 +13,11 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
 
-  |start of game|<img src="https://imgur.com/a/82lgBM4"> |
+  ![Start of Game](<Screenshot 2023-09-28 200550.png>)
 
-  |Couple of moves| <img src="https://imgur.com/l0dNBR5"> |
+ ![Alt text](<Screenshot 2023-09-28 200718.png>)
 
-  |Winner| <img src="https://imgur.com/pmjiKTa"> |
+  ![Winner](<Screenshot 2023-09-28 200855.png>)
 
 ## technologies used
 
