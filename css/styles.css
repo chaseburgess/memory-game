@@ -5,9 +5,127 @@
 .card-element {
     width: 100px;
     height: 100px;
-    border: solid black 3px;
+    border: solid greenyellow 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
+    color: red;
+}
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+header {
+    font-size: 7vmin;
+    color: darkgrey;
+    letter-spacing: 1vmin;
+    display: flex;
+    justify-content: end;
+}
+
+#word {
+    font-size: 2vmin;
+    color: darkgrey;
+}
+
+#game-board {
+    height: 100vmin;
+    width: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 15vmin);
+    grid-template-rows: repeat(4, 15vmin);
+    gap: 2vmin;
+} 
+
+#score-display {
+    justify-self: center;
+    height: 4vmin;
+    width: 17vmin;
+    margin-top: -5vmin;
+    background-color: darkgrey;
+    color: greenyellow;
+    border: .3vmin solid greenyellow;
+    border-radius: 3vmin;
+    font-size: 2vmin;
+    outline: none;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#message {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 3vmin;
+    font-size: 2.6vmin;
+    color: greenyellow;
+    text-align: center;
+}
+
+#start-game {
+    justify-self: center;
+    height: 4vmin;
+    width: 17vmin;
+    margin-top: -5vmin;
+    background-color: darkgrey;
+    color: black;
+    border: .3vmin solid greenyellow;
+    border-radius: 3vmin;
+    font-size: 2vmin;
+    outline: none;
+}
+
+#start-button:hover {
+    background-color: black;
+    color: darkgrey;
+  }
+   
+.space,
+.stars {
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+.space {
+    z-index: -2;
+    background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
+}
+
+.stars {
+    z-index: -1;
+    background: transparent url('https://i.imgur.com/XYMF4ca.png') repeat top
+        center;
+    animation: move-twink-back 600s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
 }
